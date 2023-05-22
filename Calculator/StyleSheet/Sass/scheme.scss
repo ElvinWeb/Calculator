@@ -1,0 +1,73 @@
+@import "./color.scss";
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $bg-dark;
+        color: $text-color-dark;
+    }
+
+    #calc {
+        color: $bg-lighten-dark;
+    }
+
+    .main {
+        background-color: $bg-calc-dark;
+
+        .key-container {
+            background-color: $bg-key-container-dark;
+
+        }
+
+        .key {
+            &.lighten {
+                color: $bg-lighten-dark;
+
+                &:hover {
+                    color: #ffffffb4;
+                }
+
+                &:hover {
+                    background-color: $bg-key-hover;
+                    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.055);
+                    transition: all 0.5s;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $bg-light;
+        color: $text-color-light;
+    }
+
+    #calc {
+        color: $calc-color-light;
+    }
+
+    .main {
+        background-color: $bg-calc-light;
+
+        .key-container {
+            background-color: $bg-key-container-light;
+        }
+
+        .key {
+            &.lighten {
+                color: $bg-lighten-light;
+
+                &:hover {
+                    color: #1a1a1acc;
+                }
+            }
+
+            &:hover {
+                background-color: #ebebebeb;
+                box-shadow: 0 0 0 5px #cfcfcf2d;
+            }
+        }
+    }
+}

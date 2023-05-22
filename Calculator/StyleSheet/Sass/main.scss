@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import './color.scss';
+@import './scheme.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-dark;
+
+}
+
+.main {
+    width: 350px;
+    background-color: $bg-calc-dark;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 35px;
+    box-shadow: 0 10px 40px 0 rgba(174, 174, 198, 0.171);
+
+    .appTitle {
+        align-self: center;
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    .result-container {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #calc {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        #result {
+            font-size: 40px;
+        }
+    }
+
+    .key-container {
+        background-color: $bg-key-container-dark;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 20px 0;
+
+        .row {
+            display: flex;
+
+            .key {
+                height: 60px;
+                width: 60px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin: 10px;
+                font-size: 18px;
+                border-radius: 100px;
+                cursor: pointer;
+
+
+                &#division {
+                    color: $primary-color;
+                }
+
+                &#multiply {
+                    color: $primary-color;
+                }
+
+                &#sum {
+                    color: $primary-color;
+                }
+
+                &#sub {
+                    color: $primary-color;
+                }
+
+                &#equal {
+                    background-color: $primary-color;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px $bg-equel-box--shadow;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .main {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    body {
+        align-items: flex-start;
+    }
+}

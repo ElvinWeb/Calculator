@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  color: #c2c2c2;
+}
+
+.main {
+  width: 350px;
+  background-color: #151515;
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 35px;
+  box-shadow: 0 10px 40px 0 rgba(174, 174, 198, 0.171);
+}
+.main .appTitle {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.main .appTitle span {
+  color: #ff3c39;
+}
+.main .result-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .result-container #calc {
+  font-size: 17px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.368627451);
+}
+.main .result-container #result {
+  font-size: 40px;
+}
+.main .key-container {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+}
+.main .key-container .row {
+  display: flex;
+}
+.main .key-container .row .key {
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.main .key-container .row .key#equal {
+  background-color: #ff3c39;
+  color: #fff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.2823529412);
+}
+.main .key-container .row .key#division {
+  color: #ff3c39;
+}
+.main .key-container .row .key#multiply {
+  color: #ff3c39;
+}
+.main .key-container .row .key#sum {
+  color: #ff3c39;
+}
+.main .key-container .row .key#sub {
+  color: #ff3c39;
+}
+.main .key-container .row .key.lighten {
+  color: rgba(255, 255, 255, 0.368627451);
+}
+.main .key-container .row .key.lighten:hover {
+  color: rgba(255, 255, 255, 0.7058823529);
+}
+.main .key-container .row .key:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.055);
+  transition: all 0.3s;
+}/*# sourceMappingURL=main.css.map */

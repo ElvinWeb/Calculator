@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../StyleSheet/Sass/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <span class="appTitle">Calc<span>.</span></span>
+      <div class="result-container">
+        <span id="calc">0</span>
+        <span id="result">0</span>
+      </div>
+      <div class="key-container">
+        <div class="row">
+          <div class="key lighten" id="clearAll">C</div>
+          <div class="key lighten" id="backspace">
+            <i class="fa-solid fa-delete-left"></i>
+          </div>
+          <div class="key lighten operatorkey" id="remainder">%</div>
+          <div class="key operatorkey" id="division">/</div>
+        </div>
+        <div class="row">
+          <div class="key numberkey">7</div>
+          <div class="key numberkey">8</div>
+          <div class="key numberkey">9</div>
+          <div class="key operatorkey" id="multiply">*</div>
+        </div>
+        <div class="row">
+          <div class="key numberkey">4</div>
+          <div class="key numberkey">5</div>
+          <div class="key numberkey">6</div>
+          <div class="key operatorkey" id="sum">+</div>
+        </div>
+        <div class="row">
+          <div class="key numberkey">1</div>
+          <div class="key numberkey">2</div>
+          <div class="key numberkey">3</div>
+          <div class="key operatorkey" id="sub">-</div>
+        </div>
+        <div class="row">
+          <div class="key lighten numberkey">00</div>
+          <div class="key numberkey">0</div>
+          <div class="key lighten numberkey">.</div>
+          <div class="key operatorkey" id="equal">=</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1e17087f17.js"></script>
+    <script src="../JavaScript/app.js"></script>
+  </body>
+</html>
